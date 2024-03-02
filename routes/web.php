@@ -26,5 +26,7 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::view('/crud', 'crud')->name('crud');
+    Route::view('/spa','spa')->name('spa');
 
 });
